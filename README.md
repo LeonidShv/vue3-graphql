@@ -1,6 +1,10 @@
-# vue-project
+# How to use GraphQL in Vue3 with the Apollo Client
 
-This template should help get you started developing with Vue 3 in Vite.
+[GraphQL api for this project](https://studio.apollographql.com/public/SpaceX-pxxbxen/variant/current/home)
+
+How to use GraphQL in Vue3 with the Apollo Client
+[Article with more details](https://medium.com/@leonidshvab1996/how-to-use-graphql-in-vue3-with-the-apollo-client-79b1c1fda69d)
+
 
 ## Recommended IDE Setup
 
