@@ -1,9 +1,11 @@
 # How to use GraphQL in Vue3 with the Apollo Client
 
 [GraphQL api for this project](https://studio.apollographql.com/public/SpaceX-pxxbxen/variant/current/home)
+<br />
+Read the whole tutorial in the article:
+<br />
 
-How to use GraphQL in Vue3 with the Apollo Client
-[Article with more details](https://medium.com/@leonidshvab1996/how-to-use-graphql-in-vue3-with-the-apollo-client-79b1c1fda69d)
+[How to use GraphQL in Vue3 with the Apollo Client](https://medium.com/@leonidshvab1996/how-to-use-graphql-in-vue3-with-the-apollo-client-79b1c1fda69d)
 
 
 ## Recommended IDE Setup
