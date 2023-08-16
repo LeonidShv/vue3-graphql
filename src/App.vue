@@ -32,15 +32,26 @@
 
       {{ sendMessageError ? sendMessageError : "" }}
     </section>
+
+    <section class="spacex-block">
+      <h2>Dragons</h2>
+      <div v-if="dragons">
+        <dragon-list :dragons="dragons" />
+      </div>
+
+      <VLoader :value="dragonLoading" />
+
+      {{ isDragonError ? isDragonError : "" }}
+    </section>
   </section>
 </template>
 
 <script setup>
 import { ref } from "vue";
 import VLoader from "@/components/VLoader.vue";
-
+import DragonList from "./components/DragonList.vue";
 import { useQuery, useMutation } from "@vue/apollo-composable";
-import { QUERY_COMPANY_INFO, MUTATE_INSERT_USERS } from "@/graphQl/index.ts";
+import { QUERY_COMPANY_INFO, MUTATE_INSERT_USERS, QUERY_DRAGONS } from "@/graphQl/index.ts";
 
 const {
   result: company,
@@ -67,6 +78,13 @@ const {
 onDone((result) => {
   console.log(result);
 });
+
+const {
+  result: dragons,
+  loading: dragonLoading,
+  error: isDragonError,
+} = useQuery(QUERY_DRAGONS);
+
 </script>
 
 <style>
